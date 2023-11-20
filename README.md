@@ -10,7 +10,7 @@ More Docker tags are in other Git branches.
 
 - `latest`, alias `11.7`: CUDA 11.7, Miniconda installed
 - `anaconda`, alias `11.7-anaconda`: CUDA 11.7, Anaconda 23.07 installed
-- `torch`, alias `11.7-torch_2.0.1`: CUDA 11.7, Anaconda with PyTorch 2.0.1
+- `torch`, alias `11.7-torch_1.13.1`: CUDA 11.7, Anaconda with PyTorch 1.13.1
 
 ## Install & Usage
 
@@ -24,7 +24,7 @@ docker run --detach \
     --gpus all \
     -p 8888:8888 \
     -v project:/work/project \
-    muhac/conda-cuda:11.7-torch_2.0.1
+    muhac/conda-cuda:11.7-torch_1.13.1
 ```
 
 You can use [this notebook](notebook/PyTorchGPU.ipynb) to check your PyTorch GPU environment.
